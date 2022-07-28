@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   UserModel: require("./userschema"),
   CourseModel: require("./courseschema"),
 };
