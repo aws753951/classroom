@@ -29,6 +29,10 @@ const UserSchema = new mongoose.Schema({
     type: Date,
     default: Date.now() + 8 * 60 * 60 * 1000,
   },
+  lastLogin: {
+    type: Date,
+    default: null,
+  },
   // document student's enrolled courses
   enrolled: {
     type: [mongoose.Schema.Types.ObjectId],
