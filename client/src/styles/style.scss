@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Edu SA Beginner", cursive;
+}
+
+@import "./nav";

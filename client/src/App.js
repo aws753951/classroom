@@ -1,10 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav";
+import "./styles/style.css";
 
 const App = () => {
   return (
     <div>
-      App
+      <Nav />
       <Routes></Routes>
     </div>
   );
