@@ -5,6 +5,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const AuthRoute = require("./routers").AuthRoute;
 const CourseRoute = require("./routers").CourseRoute;
+const passport = require("passport");
+require("./config/passport")(passport);
 
 mongoose
   .connect(process.env.ATLAS, {
@@ -23,7 +25,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/user", AuthRoute);
-app.use("/api/courses", CourseRoute);
+app.use(
+  "/api/courses",
+  passport.authenticate("jwt", { session: false }),
+  CourseRoute
+);
 
 app.listen(8080, () => {
   console.log("Server is running at port 8080.");
