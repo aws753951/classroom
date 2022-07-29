@@ -1,23 +1,22 @@
 nav {
-  background-color: rgb(207, 85, 28);
+  background-color: gray;
   ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
     margin-right: 3rem;
     li {
-      padding: 0.5rem 1rem;
+      display: flex;
       a {
-        font-size: 1.5rem;
+        padding: 1rem;
         color: white;
+        font-size: 1.25rem;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: rgb(165, 165, 165);
+        }
       }
-    }
-  }
-}
-
-@media screen and (max-width: 422px) {
-  nav {
-    ul {
-      flex-direction: column;
     }
   }
 }

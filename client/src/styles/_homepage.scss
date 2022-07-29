@@ -1,0 +1,111 @@
+.homepage {
+  padding: 1rem 5rem;
+  width: 100vw;
+  height: 90vh;
+
+  .container1 {
+    width: 100%;
+    min-height: 55%;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    border-radius: 20px;
+    padding: 5rem;
+    margin-bottom: 1rem;
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    button {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      background-color: rgb(17, 0, 255);
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      a {
+        padding: 1rem 2rem;
+        color: white;
+      }
+    }
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 45%;
+    .leftsection {
+      margin-right: 1rem;
+      min-height: 100%;
+      width: 100%;
+      background-color: rgb(58, 58, 58);
+      border: none;
+      border-radius: 20px;
+      padding: 5rem;
+      color: white;
+      button {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        background-color: rgb(58, 58, 58);
+        border-color: white;
+        border-radius: 5px;
+        display: flex;
+        a {
+          padding: 0.5rem 2rem;
+          color: white;
+        }
+      }
+    }
+    .rightsection {
+      min-height: 100%;
+      width: 100%;
+      background-color: rgb(184, 184, 184);
+      border: none;
+      border-radius: 20px;
+      padding: 5rem;
+      color: black;
+      button {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        background-color: rgb(184, 184, 184);
+        border-color: black;
+        border-radius: 5px;
+        display: flex;
+        a {
+          padding: 0.5rem 2rem;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage {
+    padding: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container1 {
+    padding: 1rem !important;
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+  .container2 {
+    flex-direction: column;
+    .leftsection {
+      padding: 1rem !important;
+      margin-right: 0rem !important;
+    }
+    .rightsection {
+      padding: 1rem !important;
+      margin-top: 1rem;
+      margin-left: 0rem !important;
+    }
+  }
+}

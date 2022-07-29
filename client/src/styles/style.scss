@@ -6,7 +6,7 @@
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 ul {
@@ -14,7 +14,8 @@ ul {
 }
 
 body {
-  font-family: "Edu SA Beginner", cursive;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 @import "./nav";
+@import "./homepage";
