@@ -37,7 +37,7 @@ const Homepage = () => {
           </div>
           <div className="button">
             <button>
-              <a href="">註冊或登入</a>
+              <a href="/register">註冊或登入</a>
             </button>
           </div>
         </div>
@@ -54,7 +54,7 @@ const Homepage = () => {
           </div>
           <div className="button">
             <button>
-              <a href="">註冊或登入</a>
+              <a href="/register">註冊或登入</a>
             </button>
           </div>
         </div>

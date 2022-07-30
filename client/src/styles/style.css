@@ -82,7 +82,7 @@ nav ul li a:hover {
 .homepage .container1 button {
   margin-top: 1rem;
   font-size: 1.5rem;
-  background-color: #1100ff;
+  background-color: #797979;
   border: none;
   border-radius: 5px;
   display: -webkit-box;
@@ -189,6 +189,123 @@ nav ul li a:hover {
     padding: 1rem !important;
     margin-top: 1rem;
     margin-left: 0rem !important;
+  }
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  height: 93.5vh;
+}
+
+.register button {
+  font-size: 1.5rem;
+  padding: 0.7rem 8.5rem;
+  background-color: #afafaf;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.register .leftsection {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+  position: relative;
+}
+
+.register .leftsection .picture {
+  background-image: url("../../public/pexels-linda-ellershein-3127880.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.register .leftsection .filter {
+  position: absolute;
+  background-color: gray;
+  opacity: 45%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.register .rightsection {
+  min-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 800px;
+          flex: 1 1 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register .rightsection .title {
+  width: 400px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register .rightsection .title a {
+  color: orange;
+}
+
+.register .rightsection .keyin .word {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.register .rightsection .keyin input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-color: #e7e7e7;
+  border-radius: 3px;
+}
+
+.register .rightsection .keyin .role select {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+  .leftsection {
+    height: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
