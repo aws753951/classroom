@@ -17,6 +17,13 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+.alert {
+  text-align: center;
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
 @import "./nav";
 @import "./homepage";
 @import "./register";
