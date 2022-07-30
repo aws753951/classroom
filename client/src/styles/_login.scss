@@ -1,0 +1,85 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 93.5vh;
+
+  button {
+    font-size: 1.5rem;
+    padding: 0.7rem 8.5rem;
+    background-color: rgb(175, 175, 175);
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .leftsection {
+    height: 100%;
+    flex: 1 1 400px;
+    position: relative;
+    .picture {
+      background-image: url("../../public/loginPicture.jpg");
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .filter {
+      position: absolute;
+      background-color: gray;
+      opacity: 45%;
+      height: 100%;
+      width: 100%;
+      top: 0;
+    }
+  }
+  .rightsection {
+    min-height: 100%;
+    flex: 1 1 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      width: 400px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        color: orange;
+      }
+    }
+    .keyin {
+      .word {
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+      }
+      input {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        border-color: rgb(231, 231, 231);
+        border-radius: 3px;
+      }
+      .role {
+        select {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          font-size: 1.5rem;
+          //   border-color: rgb(231, 231, 231);
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .leftsection {
+    height: 0 !important;
+  }
+}
